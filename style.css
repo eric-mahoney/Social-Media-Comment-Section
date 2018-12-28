@@ -1,0 +1,23 @@
+/* 
+Name: Eric Mahoney;
+Date: 12/14/18;
+Project: Social Media;
+*/
+
+body {
+	background-color: white;
+	color: black;
+}
+
+.comment-block {
+	widht: 200px;
+	background-color: gray;
+}
+
+.comment-name {
+	font-weight: bold;
+}
+
+.title {
+	text-align: center;
+}

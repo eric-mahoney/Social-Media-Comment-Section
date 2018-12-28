@@ -1,4 +1,4 @@
-# news-article-site
+# User Comment Section
 The site features a main, static posting that users can comment to using an HTML form. The HTML form then submits to a PHP file which links to a MySQL database and stores the information. Afterwards, users can view all posted comments which uses PHP to display the user comments within the MySQL database.
 
 ## Built With:

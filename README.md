@@ -13,3 +13,7 @@ The site features a main, static posting that users can comment to using an HTML
 **postcomment.php**: retrieves the information from the HTML file and forwards the users comment to a MySQL database.
 
 **postedcomments.php**: retrieves the user comments from the MySQL database and uses PHP advanced escaping to list all of the user information from the database.
+
+**ascendedsort.php**: retrieves user comments using MySQL ascended order by sort.
+
+**descendedsort.php**: retrieves user comments using MySQL descended order by sort.

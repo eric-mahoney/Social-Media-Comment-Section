@@ -2,7 +2,9 @@
 # User Comment Section
 
 Creator: Eric Mahoney
+
 Date: November 2018
+
 About: The site features a main, static posting that users can comment to using an HTML form. The HTML form then submits to a PHP file which links to a MySQL database and stores the information. Afterwards, users can view all posted comments using PHP to display the user comments from the database.
 
 ## Built With:

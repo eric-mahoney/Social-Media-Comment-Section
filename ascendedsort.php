@@ -12,33 +12,32 @@ Date: 12/14/18
 	</head>
 	<body>
 		<h1 class="title">Huh?</h1>
-
 		<p class="main-info">Kirshner and Karpinski report that:<br>Students who used social networking sites while studying scored 20% lower on tests on tests and students who used social media had an average GPA of 3.06 versus non-users who had an average GPA of 3.62.<br>Source: Paul A Kirschner and Aryn C. Karpinski, "Facebook and Academic Perfomance</p>
-		<hr>// opens a new PHP block to advanced escape a block of HTML code
 		<h2>Comments</h2>
-		<hr>
-		<?php 
-
-			// connect to SQL server - user and pass info redacted
+		<?php	
+		
+		// connect to SQL server - user and pass info redacted
 			define("SERVER","SERVER-NAME-HERE");
 			define("USER","USERNAME-HERE");
 			define("PASS", "PASSWORD-HERE");
 			define("DEFAULT_DB", "DEFAULT-DB-HERE");
 			$login = @mysqli_connect(SERVER, USER, PASS, DEFAULT_DB); // login to mysql and surpress error messages using the @ operator
 
-
 			$query = mysqli_query($login,"SELECT * FROM users ORDER BY name ASC");
-
+				
 			if($query){
-				while($data = mysqli_fetch_assoc($query)){
 			
+			// advanced escape to output the name and comments in the database
+				while($data = mysqli_fetch_assoc($query)){ 
+		
 		?>
+		
 		<div class="comment-block">
 			<p class="comment-name"><?php echo "Name: <a href='mailto:'" . $data['email'] . ">" . $data['name'] . "</a>"; ?></p>
 			<p class="comment-comment"><?php echo "Comment: " . $data['comment']; ?></p>
 		</div>
+		
 		<?php 
-
 			}
 		}
 

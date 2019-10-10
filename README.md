@@ -1,25 +1,21 @@
 
-# User Comment Section
+## Social Media - Comment Section
 
-Creator: Eric Mahoney
+The site features a main, static posting that users can comment to using an HTML form. The HTML form then submits to a PHP file which links to a MySQL database and stores the information. Afterwards, users can view all posted comments using PHP to display the user comments from the database.
 
-Date: November 2018
+## Project Status
 
-About: The site features a main, static posting that users can comment to using an HTML form. The HTML form then submits to a PHP file which links to a MySQL database and stores the information. Afterwards, users can view all posted comments using PHP to display the user comments from the database.
+This project is 'finished' in the sense that I do not plan on working on it anymore. However, if I could redo the project I would add the following things:
 
-## Built With:
-**PHP** - used to connect the front-end to the database and display comments using advanced escaping techniques.
+- nested replies (being able to respond to different users' comments).
+- user login.
+- having comments be submitted with information from the user profile, instead of having the fill out the different inputs (name, email, phone, etc.).
+- allowing multiple news articles instead of having one main one.
+- dynamic urls to link to the different articles.
+- having a homepage that displays the different news articles, sorted by most recent or most popular.
 
-**MySQL** - used as main database language to store users, emails, and comments.
+## Reflection
 
-## About:
+This was a school project for my PHP programming course in Fall of 2017. The requirements for this project were to use PHP to create an application that allows users to comment on a static posting that you provide. The user’s name, contact information (e-mail address), and comment were to be saved to a MySQL database table. 
 
-**index.html**: contains a main, static posting with an HTML form that sends the information using POST to a php file.
-
-**postcomment.php**: retrieves the information from the HTML file and forwards the users comment to a MySQL database.
-
-**postedcomments.php**: retrieves the user comments from the MySQL database and uses PHP advanced escaping to list all of the user information from the database.
-
-**ascendedsort.php**: retrieves user comments using MySQL ascended order by sort.
-
-**descendedsort.php**: retrieves user comments using MySQL descended order by sort.
+This assignment was the one that made everything "click" for me and it really made me think differently about how the web works and how things are made. I learned so many different things, like using PHP to connect to a SQL database, creating queries, using "advanced escaping" to dynamically render HTML components, and more. To this day, it is still probably one of my favorite classes and favorite assignments I've had in college so far and I'll always remember how proud I felt when I created a real, working application that seemingly anyone could use.
